@@ -1,0 +1,26 @@
+.footer {
+  position: relative;
+  background-image: url("../images/footer.png");
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include _640 {
+    height: 206px;
+  }
+
+  &__logo {
+    position: absolute;
+    width: 115px;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    object-position: center;
+    object-fit: fill;
+
+    @include _640 {
+      width: 80px;
+    }
+  }
+}

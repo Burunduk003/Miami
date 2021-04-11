@@ -1,0 +1,87 @@
+.contacts {
+
+  @include h2 (&);
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @include _640 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__contact-info {
+    margin-bottom: 24px;
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: 400;
+    color: $labels-color;
+    margin-bottom: 8px;
+  }
+
+  &__phone {
+    @extend %contact-info;
+    margin-bottom: 24px;
+  }
+
+  &__email,
+  &__address {
+    @extend %contact-info;
+  }
+
+  &__address-wrapper {
+    margin-bottom: 32px;
+  }
+
+  &__client-name,
+  &__client-email {
+    @extend %input-style;
+    height: 48px;
+    padding-left: 17px;
+    margin-bottom: 16px;
+
+    &:hover {
+      @extend %input-style-hover;
+    }
+
+    &:focus {
+      @extend %input-style-focus;
+    }
+  }
+
+  &__client-message {
+    @extend %input-style;
+    height: 144px;
+    padding: 17px;
+    resize: none;
+    margin-bottom: 32px;
+
+    &:hover {
+      @extend %input-style-hover;
+    }
+
+    &:focus {
+      @extend %input-style-focus;
+    }
+  }
+
+  &__send-form-button {
+    display: block;
+    width: 100%;
+    height: 56px;
+    color: $basic-white;
+    background-color: $basic-blue;
+    border: none;
+    border-radius: 8px;
+    box-shadow: $button-shadow;
+    transition: background-color 1s;
+
+    &:hover {
+      background-color: $hover-blue;
+      cursor: pointer;
+    }
+  }
+}

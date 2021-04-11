@@ -5,7 +5,9 @@
 @import "./blocks/header";
 @import "./blocks/nav";
 @import "./blocks/menu";
-
-body {
-  background: $c-gray;
-}
+@import "./blocks/content";
+@import "./blocks/main-title";
+@import "./blocks/gallery";
+@import "./blocks/testimonials";
+@import "./blocks/contacts";
+@import "./blocks/footer";

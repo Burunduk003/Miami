@@ -1,6 +1,40 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
+@mixin h2 ($class) {
+  #{$class}__title {
+    margin: 150px 0 40px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  #{$class}__title::after {
+    position: relative;
+    left: calc(50% - 12px);
+    display: block;
+    content: "";
+    background-image: url("../images/icons/crown.svg");
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+  }
+}
+
+@mixin landscape {
+  @media only screen
+    and (max-device-width: 900px)
+    and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin _640 {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin _900 {
+  @media (max-width: 900px) {
+    @content;
   }
 }

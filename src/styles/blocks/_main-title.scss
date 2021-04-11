@@ -1,0 +1,12 @@
+.title {
+  font-weight: 700;
+  font-size: 48px;
+
+  @include _640 {
+    font-size: 36px;
+  }
+
+  &__blue {
+    color: $basic-blue;
+  }
+}

@@ -1,0 +1,70 @@
+.nav {
+  text-transform: uppercase;
+
+  &_close {
+    margin-top: $logo-height/2 - 10px;
+    margin-bottom: 70px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/icons/close.svg");
+    background-size: 24px 24px;
+
+    @include landscape {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-direction: column;
+  }
+
+  &__item {
+    margin-bottom: 32px;
+    
+    &--active {
+      color: #000;
+    }
+
+    @include landscape {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__link {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    color: $basic-white;
+    padding: 8px 0;
+    transition: color $hover-duration;
+
+    &:hover {
+      border-bottom: 1px solid $basic-white;
+    }
+
+    @include landscape {
+      font-size: 16px;
+      line-height: 16px;
+      padding: 5px 0;
+    }
+  }
+
+  &_phone {
+    color: $basic-white;
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  &__order-link {
+    text-decoration: none;
+    color: $basic-white;
+    font-size: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $basic-white;
+  }
+}

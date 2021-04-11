@@ -1,10 +1,8 @@
 .content {
 
-  padding: 100px 9.5%;
-
-  @include _640 {
-    padding: 64px 9.5%;
-  }
+  margin: 0 auto;
+  padding: 100px 0;
+  width: 80%;
 
   &__about {
     display: grid;
@@ -22,6 +20,11 @@
       color: $basic-blue;
       font-size: 24px;
       font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    &-p {
+      margin-bottom: 30px;
     }
 
     &-slogan,

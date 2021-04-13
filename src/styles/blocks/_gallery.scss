@@ -7,9 +7,14 @@
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
+    transition: box-shadow 0.4s;
 
     @include _640 {
       height: 131px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
   }
 

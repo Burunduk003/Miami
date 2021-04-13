@@ -7,22 +7,26 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 150px;
 
-    @include _900 {
+    @include _1000 {
       grid-template-columns: 1fr;
       gap: 48px;
+      justify-items: center;
     }
   }
 
   &__customer {
+    max-width: 240px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
     &-name {
       color: $basic-blue;
       font-size: 24px;
       font-weight: 700;
       margin-bottom: 4px;
+      text-align: center;
     }
 
     &-position {

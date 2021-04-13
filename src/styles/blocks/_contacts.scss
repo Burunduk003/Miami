@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    @include _640 {
+    @include _1000 {
       grid-template-columns: 1fr;
     }
   }

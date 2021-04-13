@@ -3,12 +3,13 @@
   margin: 0 auto;
   padding: 100px 0;
   width: 80%;
+  max-width: 1260px;
 
   &__about {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @include _900 {
+    @include _1000 {
       grid-template-columns: 1fr;
     }
   }

@@ -9,6 +9,11 @@
     height: 24px;
     background-image: url("../images/icons/close.svg");
     background-size: 24px 24px;
+    transition: transform 400ms;
+
+    &:hover {
+      transform: rotate(180deg);
+    }
 
     @include landscape {
       margin-bottom: 20px;
@@ -55,6 +60,8 @@
   }
 
   &_phone {
+    display: block;
+    text-decoration: none;
     color: $basic-white;
     font-size: 12px;
     margin-bottom: 16px;

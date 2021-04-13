@@ -11,6 +11,7 @@
 
   &__top {
     width: 80%;
+    max-width: 1260px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, minmax(80px, 1fr));
@@ -18,6 +19,10 @@
     align-items: center;
     
     color: $basic-white;
+  }
+
+  &__logo {
+    z-index: 1;
   }
 
   &__menu {

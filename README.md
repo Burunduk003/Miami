@@ -1,5 +1,5 @@
 # Miami landing page
-- [Figma design ](https://www.figma.com/file/nHz8bflIwJaWP3P99vKTH5/miami_home_new?node-id=16033%3A3)
+- [Figma design](https://www.figma.com/file/nHz8bflIwJaWP3P99vKTH5/miami_home_new?node-id=16033%3A3)
 
 ## Technologies
 - HTML5, SCSS, Flex-box, Grid, JavaScript /n
@@ -7,3 +7,4 @@
 
 ## Description
 landing page for real estate company
+- [DEMO LINK](https://burunduk003.github.io/layout_miami/)

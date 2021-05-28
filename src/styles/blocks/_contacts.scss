@@ -16,22 +16,40 @@
   }
 
   &__label {
+    width: fit-content;
     display: block;
     font-size: 14px;
     font-weight: 400;
     color: $labels-color;
     margin-bottom: 8px;
     text-decoration: none;
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   &__phone {
     @extend %contact-info;
     margin-bottom: 24px;
+    width: fit-content;
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__email,
   &__address {
+    width: fit-content;
+    transition: transform 1s;
     @extend %contact-info;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__address-wrapper {
